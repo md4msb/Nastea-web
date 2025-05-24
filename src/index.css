@@ -1,0 +1,72 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Nastea Custom Palette */
+    --nastea-green-light: 145 30% 90%; /* Very light, minty green for subtle backgrounds */
+    --nastea-green: 140 35% 55%; /* Main brand green - earthy and calming */
+    --nastea-green-dark: 140 35% 35%; /* Darker green for text, accents */
+    
+    --nastea-beige-light: 45 50% 95%; /* Light creamy beige for backgrounds */
+    --nastea-beige: 40 30% 88%; /* Main beige */
+
+    --nastea-white: 0 0% 100%;
+    
+    --nastea-gray-light: 210 10% 80%;
+    --nastea-gray: 210 10% 40%; /* For body text */
+    --nastea-gray-dark: 210 10% 20%; /* For headings or darker text */
+
+    /* Shadcn Default Palette - Mapping Nastea colors */
+    --background: var(--nastea-beige-light); /* Light beige background */
+    --foreground: var(--nastea-gray-dark); /* Dark gray for text */
+
+    --card: var(--nastea-white);
+    --card-foreground: var(--nastea-gray-dark);
+
+    --popover: var(--nastea-white);
+    --popover-foreground: var(--nastea-gray-dark);
+
+    --primary: var(--nastea-green);
+    --primary-foreground: var(--nastea-white);
+
+    --secondary: var(--nastea-green-light);
+    --secondary-foreground: var(--nastea-green-dark);
+
+    --muted: var(--nastea-beige);
+    --muted-foreground: var(--nastea-gray);
+
+    --accent: var(--nastea-green-light);
+    --accent-foreground: var(--nastea-green-dark);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%; /* Default border, can be adjusted */
+    --input: 214.3 31.8% 91.4%; /* Default input, can be adjusted */
+    --ring: var(--nastea-green); /* Ring color to brand green */
+
+    --radius: 0.5rem;
+  }
+
+  /* Dark mode can be defined here if needed later, for now focusing on light mode */
+  .dark {
+    /* Example: Invert or use darker Nastea palette */
+    --background: var(--nastea-gray-dark);
+    --foreground: var(--nastea-beige-light);
+    /* ... other dark mode variables ... */
+  }
+
+  /* Moved base styles here */
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-nasteaGray-dark; /* Corrected class name */
+  }
+}
