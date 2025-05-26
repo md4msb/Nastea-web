@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/md4msb/Nastea-web.git
 cd nastea-web
 ```
 
@@ -47,8 +47,6 @@ npm run dev
 bun run dev
 ```
 
-The application will be available at `http://localhost:5173`
-
 ## 📝 Available Scripts
 
 - `npm run dev` - Start development server
@@ -69,21 +67,6 @@ src/
 └── App.tsx        # Main application component
 ```
 
-## 🎨 UI Components
-
-This project uses Shadcn UI, which provides a collection of reusable components built with Radix UI and Tailwind CSS. Available components include:
-
-- Accordion
-- Alert Dialog
-- Avatar
-- Button
-- Dialog
-- Dropdown Menu
-- Form components
-- Navigation Menu
-- Toast notifications
-- And many more...
-
 ## 🔧 Configuration Files
 
 - `vite.config.ts` - Vite configuration
@@ -92,9 +75,6 @@ This project uses Shadcn UI, which provides a collection of reusable components 
 - `eslint.config.js` - ESLint configuration
 - `postcss.config.js` - PostCSS configuration
 
-## 📄 License
-
-[Your License] - See the LICENSE file for details
 
 ## 👥 Contributing
 
@@ -103,7 +83,3 @@ This project uses Shadcn UI, which provides a collection of reusable components 
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📞 Support
-
-For support, please [contact details or support information]
